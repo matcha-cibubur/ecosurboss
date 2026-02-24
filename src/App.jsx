@@ -8,7 +8,7 @@ export default function App() {
         <header class="sticky top-0 z-50 bg-white shadow-md">
           <div class="max-w-7xl mx-auto px-6">
             <div class="flex items-center justify-between h-16">
-              <div class="text-2xl font-bold text-gray-800">LoremIpsum</div>
+              <div class="text-2xl font-bold text-gray-800">CIVIX</div>
 
               <nav class="hidden md:flex space-x-8">
                 <a
