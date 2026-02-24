@@ -167,6 +167,35 @@ const products = [
       penggunaan: "Furniture, bekisting",
     },
   },
+  {
+    id: "p4",
+    name: "matcha",
+    image:
+      "https://foodbyjonister.com/wp-content/uploads/2019/05/IcedMatcha4-1008x1300.jpg",
+    price: 20000,
+    unit: "Cup (500ml)",
+    quality: "A+",
+    specs: {
+      bahan: "TEH HIJAU BRO",
+      ketebalan: "12 mm",
+      penggunaan: "Minuman",
+    },
+  },
+  {
+    id: "p4",
+    name: "meong",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYczYDQMzdbHAWH9OgHuDhGAxk39XjZYjiGA&s",
+    price: 20000000,
+    unit: "Ekor",
+    quality: "A+",
+    specs: {
+      bahan: "KUCING",
+      ketebalan: "up to you",
+      penggunaan: "Hewan",
+    },
+  },
+  
 ];
 
 export default products;
