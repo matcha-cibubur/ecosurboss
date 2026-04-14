@@ -98,24 +98,17 @@ export default function ProductPage() {
         
         {/* LEFT CONTENT */}
           <div>
-            <p className="text-xs tracking-widest text-gray-500 mb-2">
-              TODAY
-            </p>
-
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Image Of The Day
+              CIVIXOR
             </h1>
 
             <h2 className="text-xl font-semibold mb-3">
-              Artemis II Recovery
+              WELCOME
             </h2>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              NASA’s Orion spacecraft with Artemis II crewmembers NASA astronauts
-              Reid Wiseman, commander; Victor Glover, pilot; Christina Koch,
-              mission specialist; and CSA astronaut Jeremy Hansen, mission
-              specialist aboard is seen under parachutes as it lands in the
-              Pacific Ocean off the coast of California.
+              Civixor is a civil engineering platform that provides detailed product specifications for construction and infrastructure projects. It serves as a reliable reference for materials, components, and technical standards, helping ensure efficient and accurate execution.
+Designed for both professionals and individuals with little to no engineering experience, Civixor makes technical information more accessible. The platform also offers consulting services to support effective application with practical and sustainable solutions.
             </p>
           </div>
 

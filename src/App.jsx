@@ -8,7 +8,7 @@ export default function App() {
         <header className="sticky top-0 z-50 bg-white shadow-md">
           <div className="max-w-7xl mx-auto px-6">
             <div className="flex items-center justify-between h-16">
-              <div className="text-2xl font-bold text-gray-800">CIVIX</div>
+              <div className="text-2xl font-bold text-gray-800">CIVIXOR</div>
 
               <nav className="hidden md:flex space-x-8">
                 <a

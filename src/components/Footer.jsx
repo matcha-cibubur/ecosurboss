@@ -29,9 +29,9 @@ export default function Footer() {
         <div>
           <h3 className="text-white font-semibold mb-4">Kontak</h3>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li>Email: info@tokobangunan.com</li>
-            <li>Telepon: +62 812-3456-7890</li>
-            <li>Alamat: Jakarta, Indonesia</li>
+            <li>Email: civixor@gmail.com</li>
+            <li>Telepon: +62 812-1234-5678</li>
+            <li>Alamat: Cikarang, Indonesia</li>
           </ul>
         </div>
 
