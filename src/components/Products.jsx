@@ -8,53 +8,84 @@ export default function ProductCard({ product }) {
     const el = cardRef.current;
     gsap.fromTo(
       el,
-      { y: 20, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.6, ease: "power2.out", stagger: 0.08 },
+      { y: 30, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }
     );
   }, []);
 
   return (
     <div
       ref={cardRef}
-      className="bg-white rounded-2xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
-      <img
-        src={product.image}
-        alt={product.name}
-        className="w-full h-44 object-cover"
-      />
-      <div className="p-4">
-        <div className="flex justify-between items-start">
-          <h3 className="text-lg font-semibold">{product.name}</h3>
+      className="group bg-white rounded-md border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
+    >
+      {/* IMAGE */}
+      <div className="overflow-hidden">
+        <img
+          src={product.image}
+          alt={product.name}
+          className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+        />
+      </div>
+
+      {/* CONTENT */}
+      <div className="p-5">
+        {/* TITLE + BADGE */}
+        <div className="flex justify-between items-start gap-2">
+          <h3 className="text-lg font-semibold text-gray-800 leading-snug line-clamp-2">
+            {product.name}
+          </h3>
+
           <span
-            className={`px-2 py-1 rounded-lg text-sm font-medium ${product.quality === "A+" ? "bg-green-200" : product.quality === "A" ? "bg-green-100" : "bg-yellow-100"}`}>
-            Kualitas {product.quality}
+            className={`text-xs px-2 py-1 rounded-full font-semibold whitespace-nowrap
+              ${
+                product.quality === "A+"
+                  ? "bg-green-100 text-green-700"
+                  : product.quality === "A"
+                  ? "bg-green-50 text-green-600"
+                  : "bg-yellow-100 text-yellow-700"
+              }`}
+          >
+            {product.quality}
           </span>
         </div>
 
-        <p className="mt-2 text-sm text-slate-600">
+        {/* SHORT DESC */}
+        <p className="mt-2 text-sm text-gray-500 line-clamp-2">
           {product.specs.jenis ??
             product.specs.bahan ??
             product.specs.komposisi}
         </p>
 
-        <ul className="mt-3 text-sm space-y-1 text-slate-700">
-          {Object.entries(product.specs).map(([k, v]) => (
-            <li key={k}>
-              <strong className="capitalize">{k}:</strong> {v}
-            </li>
-          ))}
-        </ul>
+        {/* SPECS */}
+        <div className="mt-3 flex flex-wrap gap-2">
+          {product.specs
+            .map((k) => (
+              <span
+                key={k}
+                className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-md"
+              >
+                {k}
+              </span>
+            ))}
+        </div>
 
-        <div className="mt-4 flex items-center justify-between">
+        {/* PRICE */}
+        <div className="mt-5 flex items-end justify-between">
           <div>
-            <div className="text-sm text-slate-500">Harga kisaran</div>
-            <div className="text-xl font-bold">
-              Rp{product.price.toLocaleString()}{" "}
-              <span className="text-sm font-medium text-slate-500">
+            <div className="text-xs text-gray-400">Mulai dari</div>
+            <div className="text-xl font-bold text-gray-900">
+              Rp{product.price.toLocaleString()}
+              <span className="text-sm text-gray-500 font-medium">
+                {" "}
                 /{product.unit}
               </span>
             </div>
           </div>
+
+          {/* CTA */}
+          <button className="text-sm font-medium text-orange-500 hover:text-orange-600 transition">
+            Detail →
+          </button>
         </div>
       </div>
     </div>

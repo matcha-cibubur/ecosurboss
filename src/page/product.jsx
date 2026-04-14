@@ -1,13 +1,35 @@
 import ProductCard from "../components/Products.jsx";
-import products from "../data/data.js";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import FAQSection from "../components/Faq.jsx";
+import Footer from "../components/Footer.jsx";
+import { useState, useEffect } from "react";
+import { supabase } from "../data/supabase.js";
 
 export default function ProductPage() {
+  const [products, setProducts] = useState([]);
+
+  async function getProducts() {
+  const { data, error } = await supabase
+    .from('tbl_product')
+    .select('*')
+
+  console.log(data)
+
+  if (error) {
+    console.error(error)
+  } else {
+    setProducts(data)
+  }
+}
+
+  useEffect(() => {
+    getProducts()
+  }, []);
+
   return (
     <div>
       <div>
@@ -16,52 +38,110 @@ export default function ProductPage() {
             modules={[Navigation, Pagination, Autoplay]}
             navigation
             pagination={{ clickable: true }}
-            autoplay={{ delay: 3000 }}
+            autoplay={{ delay: 8000 }}
             loop
             className="shadow-lg">
-            {/* Slide 2 */}
+            {/* Slide 1 */}
             <SwiperSlide>
-              <div className="bg-gray-800 text-white p-10 flex flex-col md:flex-row items-center justify-between">
-                <div>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <div 
+                className="relative w-full min-h-[80vh] max-h-[90vh] flex items-center justify-center bg-cover bg-center"
+                style={{
+                  backgroundImage: "url('https://images.unsplash.com/photo-1595414440701-da000c40df9c?q=80&w=1170&auto=format&fit=crop')",
+                  backgroundPosition: "bottom"
+                }}
+              >
+                {/* Content */}
+                <div className="relative z-10 bg-black/60 rounded-xl text-white text-center md:text-left max-w-6xl p-6 md:px-12">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
                     Besi & Baja
                   </h2>
-                  <p className="mb-6">
+
+                  <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 max-w-xl">
                     Material kuat dan berkualitas untuk konstruksi terbaik.
                   </p>
-                  <button className="bg-orange-500 px-6 py-2 rounded-lg font-semibold hover:bg-orange-600 transition">
+                  <button className="bg-orange-500 px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition text-sm sm:text-base">
                     Lihat Rekomendasi
                   </button>
                 </div>
-                {/* <img src="" alt="Besi" className="mt-6 md:mt-0 rounded-lg" /> */}
               </div>
             </SwiperSlide>
 
             {/* Slide 3 */}
             <SwiperSlide>
-              <div className="bg-blue-600 text-white p-10 flex flex-col md:flex-row items-center justify-between">
-                <div>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                    Cat Tembok Premium
+              <div 
+                className="relative w-full min-h-[80vh] max-h-[90vh] flex items-center justify-center bg-cover bg-center"
+                style={{
+                  backgroundImage: "url('https://images.unsplash.com/photo-1631856955350-77f4023dff2b?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+                  backgroundPosition: "center"
+                }}
+              >
+                {/* Content */}
+                <div className="relative z-10 bg-black/60 rounded-xl text-white text-center md:text-left max-w-6xl p-6 md:px-12">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                    Besi & Baja
                   </h2>
-                  <p className="mb-6">
-                    Warna tahan lama & kualitas terbaik untuk rumah.
+
+                  <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 max-w-xl">
+                    Material kuat dan berkualitas untuk konstruksi terbaik.
                   </p>
-                  <button className="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition">
-                    Cek Sekarang
+                  <button className="bg-orange-500 px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition text-sm sm:text-base">
+                    Lihat Rekomendasi
                   </button>
                 </div>
-                {/* <img src="" alt="Cat" className="mt-6 md:mt-0 rounded-lg" /> */}
               </div>
             </SwiperSlide>
           </Swiper>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
-        {products.map((p) => (
-          <ProductCard key={p.id} product={p} />
-        ))}
+      <div className="bg-gray-100 py-16 px-6 md:px-12 lg:px-20">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        
+        {/* LEFT CONTENT */}
+          <div>
+            <p className="text-xs tracking-widest text-gray-500 mb-2">
+              TODAY
+            </p>
+
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              Image Of The Day
+            </h1>
+
+            <h2 className="text-xl font-semibold mb-3">
+              Artemis II Recovery
+            </h2>
+
+            <p className="text-gray-700 leading-relaxed mb-6">
+              NASA’s Orion spacecraft with Artemis II crewmembers NASA astronauts
+              Reid Wiseman, commander; Victor Glover, pilot; Christina Koch,
+              mission specialist; and CSA astronaut Jeremy Hansen, mission
+              specialist aboard is seen under parachutes as it lands in the
+              Pacific Ocean off the coast of California.
+            </p>
+          </div>
+
+          {/* RIGHT IMAGE */}
+          <div className="relative">
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1681692092648-9243865930fa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="NASA"
+                className="rounded-md w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
       </div>
+      <div className="w-full">
+        <div className="max-w-7xl mx-auto p-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            {products.map((p) => (
+              <ProductCard key={p.id} product={p} />
+            ))}
+          </div>
+        </div>
+      </div>
+      <FAQSection />
+      <Footer />
     </div>
   );
 }

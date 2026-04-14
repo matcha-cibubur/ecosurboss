@@ -7,11 +7,11 @@ const products = [
     price: 75000,
     unit: "zak (40kg)",
     quality: "A",
-    specs: {
-      komposisi: "Portland cement, stabilizer",
-      kekuatan: "Kuat tekan 40 MPa",
-      penggunaan: "Dinding, plesteran, struktur ringan",
-    },
+    specs: [
+      "komposisi: Portland cement, stabilizer",
+      "kekuatan: Kuat tekan 40 MPa",
+      "penggunaan: Dinding, plesteran, struktur ringan",
+    ],
   },
   {
     id: "p2",
@@ -21,11 +21,11 @@ const products = [
     price: 1200,
     unit: "buah",
     quality: "B",
-    specs: {
-      komposisi: "Tanah liat bakar",
-      dimensi: "19 x 9 x 5,7 cm",
-      penggunaan: "Dinding, sekat",
-    },
+    specs: [
+      "komposisi: Tanah liat bakar",
+      "dimensi: 19 x 9 x 5,7 cm",
+      "penggunaan: Dinding, sekat",
+    ],
   },
   {
     id: "p3",
@@ -35,11 +35,11 @@ const products = [
     price: 350000,
     unit: "kaleng (5L)",
     quality: "A+",
-    specs: {
-      jenis: "Akrilik latex",
-      tahanan: "Tahan UV & jamur",
-      coverage: "~35 m2 / liter",
-    },
+    specs: [
+      "jenis: Akrilik latex",
+      "tahanan: Tahan UV & jamur",
+      "coverage: ~35 m2 / liter",
+    ],
   },
   {
     id: "p4",
@@ -49,11 +49,11 @@ const products = [
     price: 220000,
     unit: "lembar (1220x2440 mm)",
     quality: "A",
-    specs: {
-      bahan: "Sungkai/Jati belanda",
-      ketebalan: "12 mm",
-      penggunaan: "Furniture, bekisting",
-    },
+    specs: [
+      "bahan: Sungkai/Jati belanda",
+      "ketebalan: 12 mm",
+      "penggunaan: Furniture, bekisting",
+    ],
   },
   {
     id: "p1",
@@ -63,11 +63,11 @@ const products = [
     price: 75000,
     unit: "zak (40kg)",
     quality: "A",
-    specs: {
-      komposisi: "Portland cement, stabilizer",
-      kekuatan: "Kuat tekan 40 MPa",
-      penggunaan: "Dinding, plesteran, struktur ringan",
-    },
+    specs: [
+      "komposisi: Portland cement, stabilizer",
+      "kekuatan: Kuat tekan 40 MPa",
+      "penggunaan: Dinding, plesteran, struktur ringan",
+    ],
   },
   {
     id: "p2",
@@ -77,11 +77,11 @@ const products = [
     price: 1200,
     unit: "buah",
     quality: "B",
-    specs: {
-      komposisi: "Tanah liat bakar",
-      dimensi: "19 x 9 x 5,7 cm",
-      penggunaan: "Dinding, sekat",
-    },
+    specs: [
+      "komposisi: Tanah liat bakar",
+      "dimensi: 19 x 9 x 5,7 cm",
+      "penggunaan: Dinding, sekat",
+    ],
   },
   {
     id: "p3",
@@ -91,11 +91,11 @@ const products = [
     price: 350000,
     unit: "kaleng (5L)",
     quality: "A+",
-    specs: {
-      jenis: "Akrilik latex",
-      tahanan: "Tahan UV & jamur",
-      coverage: "~35 m2 / liter",
-    },
+    specs: [
+      "jenis: Akrilik latex",
+      "tahanan: Tahan UV & jamur",
+      "coverage: ~35 m2 / liter",
+    ],
   },
   {
     id: "p4",
@@ -105,11 +105,11 @@ const products = [
     price: 220000,
     unit: "lembar (1220x2440 mm)",
     quality: "A",
-    specs: {
-      bahan: "Sungkai/Jati belanda",
-      ketebalan: "12 mm",
-      penggunaan: "Furniture, bekisting",
-    },
+    specs: [
+      "bahan: Sungkai/Jati belanda",
+      "ketebalan: 12 mm",
+      "penggunaan: Furniture, bekisting",
+    ],
   },
   {
     id: "p1",
@@ -119,11 +119,11 @@ const products = [
     price: 75000,
     unit: "zak (40kg)",
     quality: "A",
-    specs: {
-      komposisi: "Portland cement, stabilizer",
-      kekuatan: "Kuat tekan 40 MPa",
-      penggunaan: "Dinding, plesteran, struktur ringan",
-    },
+    specs: [
+      "komposisi: Portland cement, stabilizer",
+      "kekuatan: Kuat tekan 40 MPa",
+      "penggunaan: Dinding, plesteran, struktur ringan",
+    ],
   },
   {
     id: "p2",
@@ -133,11 +133,11 @@ const products = [
     price: 1200,
     unit: "buah",
     quality: "B",
-    specs: {
-      komposisi: "Tanah liat bakar",
-      dimensi: "19 x 9 x 5,7 cm",
-      penggunaan: "Dinding, sekat",
-    },
+    specs: [
+      "komposisi: Tanah liat bakar",
+      "dimensi: 19 x 9 x 5,7 cm",
+      "penggunaan: Dinding, sekat",
+    ],
   },
   {
     id: "p3",
@@ -147,11 +147,11 @@ const products = [
     price: 350000,
     unit: "kaleng (5L)",
     quality: "A+",
-    specs: {
-      jenis: "Akrilik latex",
-      tahanan: "Tahan UV & jamur",
-      coverage: "~35 m2 / liter",
-    },
+    specs: [
+      "jenis: Akrilik latex",
+      "tahanan: Tahan UV & jamur",
+      "coverage: ~35 m2 / liter",
+    ],
   },
   {
     id: "p4",
@@ -161,11 +161,11 @@ const products = [
     price: 220000,
     unit: "lembar (1220x2440 mm)",
     quality: "A",
-    specs: {
-      bahan: "Sungkai/Jati belanda",
-      ketebalan: "12 mm",
-      penggunaan: "Furniture, bekisting",
-    },
+    specs: [
+      "bahan: Sungkai/Jati belanda",
+      "ketebalan: 12 mm",
+      "penggunaan: Furniture, bekisting",
+    ],
   },
   {
     id: "p4",
@@ -175,11 +175,11 @@ const products = [
     price: 20000,
     unit: "Cup (500ml)",
     quality: "A+",
-    specs: {
-      bahan: "TEH HIJAU BRO",
-      ketebalan: "12 mm",
-      penggunaan: "Minuman",
-    },
+    specs: [
+      "bahan: TEH HIJAU BRO",
+      "ketebalan: 12 mm",
+      "penggunaan: Minuman",
+    ],
   },
   {
     id: "p4",
@@ -189,11 +189,11 @@ const products = [
     price: 20000000,
     unit: "Ekor",
     quality: "A+",
-    specs: {
-      bahan: "KUCING",
-      ketebalan: "up to you",
-      penggunaan: "Hewan",
-    },
+    specs: [
+      "bahan: KUCING",
+      "ketebalan: up to you",
+      "penggunaan: Hewan",
+    ],
   },
   
 ];
