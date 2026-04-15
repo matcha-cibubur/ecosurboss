@@ -11,7 +11,7 @@ import { supabase } from "../data/supabase.js";
 
 export default function ProductPage() {
   const [products, setProducts] = useState([]);
-
+const [search, setSearch] = useState("");
   async function getProducts() {
   const { data, error } = await supabase
     .from('tbl_product')
@@ -29,7 +29,9 @@ export default function ProductPage() {
   useEffect(() => {
     getProducts()
   }, []);
-
+const filteredProducts = products.filter((p) =>
+    p.name.toLowerCase().includes(search.toLowerCase()),
+  );
   return (
     <div>
       <div>
@@ -126,10 +128,27 @@ Designed for both professionals and individuals with little to no engineering ex
       </div>
       <div className="w-full">
         <div className="max-w-7xl mx-auto p-4">
+          <div className="mb-6 flex flex-col justify-between items-center gap-4">
+            <h2 className="text-xl md:text-2xl font-semibold">Produk Kami</h2>
+
+            <input
+              type="text"
+              placeholder="Cari produk..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="w-48 md:w-72 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+            />
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {products.map((p) => (
-              <ProductCard key={p.id} product={p} />
-            ))}
+             {filteredProducts.length > 0 ? (
+              filteredProducts.map((p) => (
+                <ProductCard key={p.id} product={p} />
+              ))
+            ) : (
+              <p className="col-span-full text-center text-gray-500 text-2xl my-8">
+                Produk tidak ditemukan
+              </p>
+            )}
           </div>
         </div>
       </div>
