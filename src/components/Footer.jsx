@@ -6,11 +6,10 @@ export default function Footer() {
         {/* BRAND */}
         <div>
           <h2 className="text-xl font-bold text-white mb-4">
-            TokoBangunan
+            CIVIXOR
           </h2>
           <p className="text-sm leading-relaxed text-gray-400">
-            Menyediakan berbagai kebutuhan material bangunan berkualitas
-            tinggi untuk proyek konstruksi Anda.
+            Menyediakan informasi material bangunan dengan berbagai spesifikasi sesuai yang diutuhkan untuk proyek konstruksi Anda.
           </p>
         </div>
 
@@ -41,7 +40,7 @@ export default function Footer() {
             Berlangganan
           </h3>
           <p className="text-sm text-gray-400 mb-4">
-            Dapatkan info promo dan produk terbaru.
+            Konsultasikan kebutuhan material bangunan Anda.
           </p>
 
           <div className="flex items-center bg-gray-800 rounded-lg overflow-hidden">

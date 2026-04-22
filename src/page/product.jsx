@@ -55,14 +55,14 @@ const filteredProducts = products.filter((p) =>
                 {/* Content */}
                 <div className="relative z-10 bg-black/60 rounded-xl text-white text-center md:text-left max-w-6xl p-6 md:px-12">
                   <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-                    Besi & Baja
+                    Material
                   </h2>
 
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 max-w-xl">
-                    Material kuat dan berkualitas untuk konstruksi terbaik.
+                    Besi
                   </p>
                   <button className="bg-orange-500 px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition text-sm sm:text-base">
-                    Lihat Rekomendasi
+                    Lihat Informasi
                   </button>
                 </div>
               </div>
@@ -80,14 +80,14 @@ const filteredProducts = products.filter((p) =>
                 {/* Content */}
                 <div className="relative z-10 bg-black/60 rounded-xl text-white text-center md:text-left max-w-6xl p-6 md:px-12">
                   <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-                    Besi & Baja
+                    Material
                   </h2>
 
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 max-w-xl">
-                    Material kuat dan berkualitas untuk konstruksi terbaik.
+                    Baja
                   </p>
                   <button className="bg-orange-500 px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition text-sm sm:text-base">
-                    Lihat Rekomendasi
+                    Lihat Informasi
                   </button>
                 </div>
               </div>

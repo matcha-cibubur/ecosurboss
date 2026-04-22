@@ -17,11 +17,6 @@ const faqs = [
     answer:
       "Anda dapat langsung memilih produk dan menghubungi kami melalui tombol detail atau kontak yang tersedia.",
   },
-  {
-    question: "Apakah produk memiliki kualitas terjamin?",
-    answer:
-      "Ya, semua produk telah melalui proses seleksi dan memiliki standar kualitas yang jelas.",
-  },
 ];
 
 export default function FAQSection() {
