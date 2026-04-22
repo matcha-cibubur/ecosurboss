@@ -48,7 +48,7 @@ const filteredProducts = products.filter((p) =>
               <div 
                 className="relative w-full min-h-[80vh] max-h-[90vh] flex items-center justify-center bg-cover bg-center"
                 style={{
-                  backgroundImage: "url('https://images.unsplash.com/photo-1595414440701-da000c40df9c?q=80&w=1170&auto=format&fit=crop')",
+                  backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1t08kGaCYPAiGZtLVBO3I8OJmr7x87v4q_Q&s')",
                   backgroundPosition: "bottom"
                 }}
               >
@@ -59,7 +59,7 @@ const filteredProducts = products.filter((p) =>
                   </h2>
 
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 max-w-xl">
-                    Besi
+                    Baja
                   </p>
                   <button className="bg-orange-500 px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition text-sm sm:text-base">
                     Lihat Informasi
@@ -73,7 +73,7 @@ const filteredProducts = products.filter((p) =>
               <div 
                 className="relative w-full min-h-[80vh] max-h-[90vh] flex items-center justify-center bg-cover bg-center"
                 style={{
-                  backgroundImage: "url('https://images.unsplash.com/photo-1631856955350-77f4023dff2b?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+                  backgroundImage: "url('https://arsgroup.in/wp-content/uploads/2024/08/concrete-mixing-ratio.jpeg')",
                   backgroundPosition: "center"
                 }}
               >
@@ -84,7 +84,7 @@ const filteredProducts = products.filter((p) =>
                   </h2>
 
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 max-w-xl">
-                    Baja
+                    Concrete
                   </p>
                   <button className="bg-orange-500 px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition text-sm sm:text-base">
                     Lihat Informasi
