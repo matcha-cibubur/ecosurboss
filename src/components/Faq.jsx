@@ -3,19 +3,24 @@ import { gsap } from "gsap";
 
 const faqs = [
   {
-    question: "Apakah produk memiliki kualitas terjamin?",
+    question: "Apakah informasi material yang disediakan selalu terbaru?",
     answer:
-      "Ya, semua produk telah melalui proses seleksi dan memiliki standar kualitas yang jelas.",
+      "Kami berusaha memperbarui informasi material secara berkala agar tetap relevan dengan kondisi pasar. Namun, harga dan ketersediaan dapat berubah sewaktu-waktu tergantung supplier dan wilayah.",
   },
   {
-    question: "Apakah tersedia pengiriman ke seluruh Indonesia?",
+    question: "Apakah website ini menjual material bangunan secara langsung?",
     answer:
-      "Kami melayani pengiriman ke seluruh Indonesia melalui mitra logistik terpercaya.",
+      "Tidak. Website ini berfokus pada penyediaan informasi material bangunan dan layanan konsultasi RAB, bukan sebagai toko atau marketplace penjualan langsung.",
   },
   {
-    question: "Bagaimana cara melakukan pemesanan?",
+    question: "Apakah tersedia layanan untuk konsultasi?",
     answer:
-      "Anda dapat langsung memilih produk dan menghubungi kami melalui tombol detail atau kontak yang tersedia.",
+      "Ya, kami menyediakan layanan konsultasi bagi customer yang membutuhkan. Kami menyediakan para ahli konsultan teknik untuk membantu anda dalam pembuatan rancangan biaya.",
+  },
+  {
+    question: "Apakah konsultasi RAB berbayar?",
+    answer:
+      "Layanan konsultasi dapat bersifat gratis untuk tahap awal (estimasi kasar). Untuk perhitungan RAB yang lebih detail dan lengkap, mungkin akan dikenakan biaya tergantung kompleksitas proyek.",
   },
 ];
 

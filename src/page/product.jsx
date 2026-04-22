@@ -48,7 +48,7 @@ const filteredProducts = products.filter((p) =>
               <div 
                 className="relative w-full min-h-[80vh] max-h-[90vh] flex items-center justify-center bg-cover bg-center"
                 style={{
-                  backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1t08kGaCYPAiGZtLVBO3I8OJmr7x87v4q_Q&s')",
+                  backgroundImage: "url('https://plus.unsplash.com/premium_photo-1663054763397-4933ffbed379?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
                   backgroundPosition: "bottom"
                 }}
               >
@@ -73,7 +73,7 @@ const filteredProducts = products.filter((p) =>
               <div 
                 className="relative w-full min-h-[80vh] max-h-[90vh] flex items-center justify-center bg-cover bg-center"
                 style={{
-                  backgroundImage: "url('https://arsgroup.in/wp-content/uploads/2024/08/concrete-mixing-ratio.jpeg')",
+                  backgroundImage: "url('https://plus.unsplash.com/premium_photo-1661962468079-5d6791f9c627?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29uY3JldGUlMjBmb3IlMjBjb25zdHJ1Y3Rpb258ZW58MHx8MHx8fDA%3D')",
                   backgroundPosition: "center"
                 }}
               >
@@ -129,7 +129,7 @@ Designed for both professionals and individuals with little to no engineering ex
       <div className="w-full">
         <div className="max-w-7xl mx-auto p-4">
           <div className="mb-6 flex flex-col justify-between items-center gap-4">
-            <h2 className="text-xl md:text-2xl font-semibold">Produk Kami</h2>
+            <h2 className="text-xl md:text-2xl font-semibold">List of Materials</h2>
 
             <input
               type="text"

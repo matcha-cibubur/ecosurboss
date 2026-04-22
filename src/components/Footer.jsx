@@ -59,7 +59,7 @@ export default function Footer() {
 
       {/* BOTTOM */}
       <div className="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} TokoBangunan. All rights reserved.
+        © {new Date().getFullYear()} CIVIXOR. All rights reserved.
       </div>
     </footer>
   );
