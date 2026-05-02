@@ -35,18 +35,7 @@ export default function ProductCard({ product }) {
             {product.name}
           </h3>
 
-          <span
-            className={`text-xs px-2 py-1 rounded-full font-semibold whitespace-nowrap
-              ${
-                product.quality === "A+"
-                  ? "bg-green-100 text-green-700"
-                  : product.quality === "A"
-                  ? "bg-green-50 text-green-600"
-                  : "bg-yellow-100 text-yellow-700"
-              }`}
-          >
-            {product.quality}
-          </span>
+        
         </div>
 
         {/* SHORT DESC */}
@@ -57,17 +46,7 @@ export default function ProductCard({ product }) {
         </p>
 
         {/* SPECS */}
-        <div className="mt-3 flex flex-wrap gap-2">
-          {product.specs
-            .map((k) => (
-              <span
-                key={k}
-                className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-md"
-              >
-                {k}
-              </span>
-            ))}
-        </div>
+        
 
         {/* PRICE */}
         <div className="mt-5 flex items-end justify-between">

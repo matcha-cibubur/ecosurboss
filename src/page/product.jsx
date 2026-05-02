@@ -92,6 +92,30 @@ const filteredProducts = products.filter((p) =>
                 </div>
               </div>
             </SwiperSlide>
+            {/* Slide 3 */}
+            <SwiperSlide>
+              <div 
+                className="relative w-full min-h-[80vh] max-h-[90vh] flex items-center justify-center bg-cover bg-center"
+                style={{
+                  backgroundImage: "url('https://images.unsplash.com/photo-1632758822769-2e26156edec4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+                  backgroundPosition: "center"
+                }}
+              >
+                {/* Content */}
+                <div className="relative z-10 bg-black/60 rounded-xl text-white text-center md:text-left max-w-6xl p-6 md:px-12">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                    Material
+                  </h2>
+
+                  <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 max-w-xl">
+                    Brick
+                  </p>
+                  <button className="bg-orange-500 px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition text-sm sm:text-base">
+                    Lihat Informasi
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
       </div>
@@ -133,7 +157,7 @@ Designed for both professionals and individuals with little to no engineering ex
 
             <input
               type="text"
-              placeholder="Cari produk..."
+              placeholder="Search..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className="w-48 md:w-72 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
