@@ -5,12 +5,12 @@ const faqs = [
   {
     question: "Apakah informasi material yang disediakan selalu terbaru?",
     answer:
-      "Kami berusaha memperbarui informasi material secara berkala agar tetap relevan dengan kondisi pasar. Namun, harga dan ketersediaan dapat berubah sewaktu-waktu tergantung supplier dan wilayah.",
+      "Kami berusaha memperbarui informasi material secara berkala agar tetap relevan dengan kondisi pasar. Namun, harga dapat berubah sewaktu-waktu tergantung supplier dan wilayah.",
   },
   {
-    question: "Apakah website ini menjual material bangunan secara langsung?",
+    question: "Apakah website ini menyediakan atau menjual material bangunan?",
     answer:
-      "Tidak. Website ini berfokus pada penyediaan informasi material bangunan dan layanan konsultasi RAB, bukan sebagai toko atau marketplace penjualan langsung.",
+      "Tidak. Website ini tidak menjual material bangunan secara langsung. Kami hanya menyediakan informasi seputar material bangunan, spesifikasi, serta membantu konsultasi untuk kebutuhan RAB agar Anda dapat memilih material yang sesuai dengan proyek.",
   },
   {
     question: "Apakah tersedia layanan untuk konsultasi?",

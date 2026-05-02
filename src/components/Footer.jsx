@@ -9,7 +9,7 @@ export default function Footer() {
             CIVIXOR
           </h2>
           <p className="text-sm leading-relaxed text-gray-400">
-            Menyediakan informasi material bangunan dengan berbagai spesifikasi sesuai yang diutuhkan untuk proyek konstruksi Anda.
+            Menyediakan informasi material bangunan dengan berbagai spesifikasi sesuai yang dibutuhkan untuk proyek konstruksi Anda.
           </p>
         </div>
 
