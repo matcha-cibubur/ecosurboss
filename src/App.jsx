@@ -19,12 +19,12 @@ export default function App() {
                 <a
                   href="#"
                   className="text-gray-600 hover:text-orange-500 transition">
-                  Produk
+                  Material
                 </a>
                 <a
                   href="#"
                   className="text-gray-600 hover:text-orange-500 transition">
-                  Kategori
+                  Calculation
                 </a>
                 <a
                   href="#"
