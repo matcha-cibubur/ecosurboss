@@ -14,7 +14,7 @@ export default function App() {
                 <a
                   href="#"
                   className="text-gray-600 hover:text-orange-500 transition">
-                  Beranda
+                  Home Page
                 </a>
                 <a
                   href="#"
@@ -29,12 +29,7 @@ export default function App() {
                 <a
                   href="#"
                   className="text-gray-600 hover:text-orange-500 transition">
-                  Tentang Kami
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 transition">
-                  Kontak
+                  About Us
                 </a>
               </nav>
 
