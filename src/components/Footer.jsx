@@ -2,14 +2,12 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 pt-14 pb-8 px-6">
       <div className="max-w-7xl mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-        
         {/* BRAND */}
         <div>
-          <h2 className="text-xl font-bold text-white mb-4">
-            CIVIXOR
-          </h2>
+          <h2 className="text-xl font-bold text-white mb-4">CIVIXOR</h2>
           <p className="text-sm leading-relaxed text-gray-400">
-            Menyediakan informasi material bangunan dengan berbagai spesifikasi sesuai yang dibutuhkan untuk proyek konstruksi Anda.
+            We provide information on building materials with a variety of
+            specifications to meet the needs of your construction project.
           </p>
         </div>
 
@@ -17,10 +15,26 @@ export default function Footer() {
         <div>
           <h3 className="text-white font-semibold mb-4">Navigasi</h3>
           <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:text-white transition">Beranda</a></li>
-            <li><a href="#" className="hover:text-white transition">Produk</a></li>
-            <li><a href="#" className="hover:text-white transition">Tentang Kami</a></li>
-            <li><a href="#" className="hover:text-white transition">Kontak</a></li>
+            <li>
+              <a href="#" className="hover:text-white transition">
+                Beranda
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white transition">
+                Produk
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white transition">
+                Tentang Kami
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white transition">
+                Kontak
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -36,9 +50,7 @@ export default function Footer() {
 
         {/* NEWSLETTER */}
         <div>
-          <h3 className="text-white font-semibold mb-4">
-            Berlangganan
-          </h3>
+          <h3 className="text-white font-semibold mb-4">Berlangganan</h3>
           <p className="text-sm text-gray-400 mb-4">
             Konsultasikan kebutuhan material bangunan Anda.
           </p>
@@ -54,7 +66,6 @@ export default function Footer() {
             </button>
           </div>
         </div>
-
       </div>
 
       {/* BOTTOM */}

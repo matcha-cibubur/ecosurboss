@@ -1,26 +1,25 @@
 import { useState } from "react";
-import { gsap } from "gsap";
 
 const faqs = [
   {
-    question: "Apakah informasi material yang disediakan selalu terbaru?",
+    question: "Is the important information provided always up to date?",
     answer:
-      "Kami berusaha memperbarui informasi material secara berkala agar tetap relevan dengan kondisi pasar. Namun, harga dapat berubah sewaktu-waktu tergantung supplier dan wilayah.",
+      "We strive to update material information regularly to ensure it remains relevant to market conditions. However, prices are subject to change at any time depending on the supplier and region.",
   },
   {
-    question: "Apakah website ini menyediakan atau menjual material bangunan?",
+    question: "Does this website provide or sell building materials?",
     answer:
-      "Tidak. Website ini tidak menjual material bangunan secara langsung. Kami hanya menyediakan informasi seputar material bangunan, spesifikasi, serta membantu konsultasi untuk kebutuhan RAB agar Anda dapat memilih material yang sesuai dengan proyek.",
+      "No. This website does not sell building materials directly. We only provide information about building materials and specifications, as well as consultation services to help you prepare a cost estimate so you can choose the right materials for your project.",
   },
   {
-    question: "Apakah tersedia layanan untuk konsultasi?",
+    question: "Is there a consultation service available?",
     answer:
-      "Ya, kami menyediakan layanan konsultasi bagi customer yang membutuhkan. Kami menyediakan para ahli konsultan teknik untuk membantu anda dalam pembuatan rancangan biaya.",
+      "Yes, we offer consulting services to customers who need them. We have technical consultants available to assist you with cost estimates.",
   },
   {
-    question: "Apakah konsultasi RAB berbayar?",
+    question: "Is the RAB consultation fee-based?",
     answer:
-      "Layanan konsultasi dapat bersifat gratis untuk tahap awal (estimasi kasar). Untuk perhitungan RAB yang lebih detail dan lengkap, mungkin akan dikenakan biaya tergantung kompleksitas proyek.",
+      "Consulting services may be free of charge for the initial stage (rough estimate). For a more detailed and comprehensive cost estimate, a fee may apply depending on the complexity of the project.",
   },
 ];
 
@@ -34,15 +33,11 @@ export default function FAQSection() {
   return (
     <div className="bg-gray-50 py-16 px-6">
       <div className="max-w-4xl mx-auto">
-        
         {/* TITLE */}
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            FAQ
+            Frequently Asked Questions
           </h2>
-          <p className="text-gray-500 mt-2">
-            Pertanyaan yang sering ditanyakan
-          </p>
         </div>
 
         {/* FAQ LIST */}
@@ -53,13 +48,11 @@ export default function FAQSection() {
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden transition"
-              >
+                className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden transition">
                 {/* QUESTION */}
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full flex justify-between items-center p-5 text-left"
-                >
+                  className="w-full flex justify-between items-center p-5 text-left">
                   <span className="font-medium text-gray-800">
                     {faq.question}
                   </span>
@@ -71,11 +64,8 @@ export default function FAQSection() {
                 {/* ANSWER */}
                 <div
                   className={`px-5 transition-all duration-300 ease-in-out ${
-                    isActive
-                      ? "max-h-40 opacity-100 pb-5"
-                      : "max-h-0 opacity-0"
-                  } overflow-hidden`}
-                >
+                    isActive ? "max-h-40 opacity-100 pb-5" : "max-h-0 opacity-0"
+                  } overflow-hidden`}>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     {faq.answer}
                   </p>
@@ -84,7 +74,6 @@ export default function FAQSection() {
             );
           })}
         </div>
-
       </div>
     </div>
   );
