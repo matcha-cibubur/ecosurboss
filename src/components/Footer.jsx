@@ -16,23 +16,23 @@ export default function Footer() {
           <h3 className="text-white font-semibold mb-4">Navigasi</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#" className="hover:text-white transition">
-                Beranda
+              <a href="/" className="hover:text-white transition">
+                Home
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
-                Produk
+              <a href="/material" className="hover:text-white transition">
+                Material
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
-                Tentang Kami
+              <a href="/calculation" className="hover:text-white transition">
+                Calculation
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
-                Kontak
+              <a href="/aboutus" className="hover:text-white transition">
+                About us
               </a>
             </li>
           </ul>
@@ -46,25 +46,6 @@ export default function Footer() {
             <li>Telepon: +62 812-1234-5678</li>
             <li>Alamat: Cikarang, Indonesia</li>
           </ul>
-        </div>
-
-        {/* NEWSLETTER */}
-        <div>
-          <h3 className="text-white font-semibold mb-4">Berlangganan</h3>
-          <p className="text-sm text-gray-400 mb-4">
-            Konsultasikan kebutuhan material bangunan Anda.
-          </p>
-
-          <div className="flex items-center bg-gray-800 rounded-lg overflow-hidden">
-            <input
-              type="email"
-              placeholder="Email Anda"
-              className="w-full px-3 py-2 bg-transparent text-sm focus:outline-none"
-            />
-            <button className="bg-orange-500 px-4 py-2 text-sm font-medium hover:bg-orange-600 transition">
-              Kirim
-            </button>
-          </div>
         </div>
       </div>
 

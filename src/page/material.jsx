@@ -10,6 +10,7 @@ import {
   Truck,
   Filter,
   X,
+  Calendar,
 } from "lucide-react"; // Gunakan lucide-react untuk ikon
 import { useSearchParams } from "react-router"; // Import untuk parameter URL
 
@@ -20,19 +21,14 @@ const features = [
     desc: "All materials have passed national standard and structural integrity tests.",
   },
   {
-    icon: <Truck size={32} className="text-[#F98821]" />,
-    title: "Integrated Logistics",
-    desc: "Fast and secure delivery directly to your project site, without any delays.",
-  },
-  {
-    icon: <Clock size={32} className="text-[#F98821]" />,
-    title: "Time Efficiency",
-    desc: "Instant ordering and pricing to speed up the construction schedule.",
-  },
-  {
     icon: <HardHat size={32} className="text-[#F98821]" />,
     title: "Expert Support",
     desc: "Free consultation with our technical team to help you choose the right materials.",
+  },
+  {
+    icon: <Calendar size={32} className="text-[#F98821]" />,
+    title: "Updated Information",
+    desc: "We regularly update material information, dimensions, prices, and calculations for accurate and reliable data",
   },
 ];
 
@@ -80,11 +76,15 @@ export default function MaterialPage() {
 
       <div className="w-full bg-white py-16 border-b border-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="flex flex-wrap justify-center gap-y-12 gap-x-12 lg:gap-x-24">
             {features.map((f, i) => (
-              <div key={i} className="flex flex-col items-center text-center">
-                <div className="mb-5 p-4 bg-orange-50 rounded-2xl">
-                  {f.icon}
+              <div
+                key={i}
+                className="flex flex-col items-center text-center w-full sm:w-[calc(50%-3rem)] lg:w-[calc(25%-6rem)] min-w-62.5 max-w-75">
+                <div className="mb-5 p-4 bg-orange-50 rounded-2xl transition-all duration-300 hover:bg-[#F98821] group">
+                  <div className="text-[#F98821] group-hover:text-white transition-colors">
+                    {f.icon}
+                  </div>
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2 tracking-tight">
                   {f.title}
