@@ -124,14 +124,6 @@ export default function ProductDetailPage() {
                 Certified Quality
               </span>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-blue-50 rounded-lg text-[#1B5E9E]">
-                <Truck size={20} />
-              </div>
-              <span className="text-xs font-bold text-gray-600 uppercase tracking-tight">
-                Express Logistic
-              </span>
-            </div>
           </div>
         </div>
       </div>
