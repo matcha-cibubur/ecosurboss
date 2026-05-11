@@ -7,6 +7,7 @@ import Footer from "./components/Footer.jsx";
 import CalculationPage from "./page/calculation.jsx";
 import AboutusPage from "./page/aboutus.jsx";
 import ProductDetailPage from "./page/detail.jsx";
+import ProjectDeletedPage from "./page/Deleted.jsx";
 
 export default function App() {
   const [openLang, setOpenLang] = useState(false);
@@ -115,11 +116,12 @@ export default function App() {
         </header>
         <main>
           <Routes>
-            <Route path="/" element={<ProductPage />} />
+            {/* <Route path="/" element={<ProductPage />} />
             <Route path="/material" element={<MaterialPage />} />
             <Route path="/calculation" element={<CalculationPage />} />
             <Route path="/aboutus" element={<AboutusPage />} />
-            <Route path="/detail/:id" element={<ProductDetailPage />} />
+            <Route path="/detail/:id" element={<ProductDetailPage />} /> */}
+            <Route path="*" element={<ProjectDeletedPage />} />
           </Routes>
         </main>
         <Footer />
