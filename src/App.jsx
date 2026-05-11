@@ -15,10 +15,9 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-50">
       <div className="mx-auto container-max">
-        <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-gray-50">
+        {/* <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-gray-50">
           <div className="max-w-7xl mx-auto px-6 md:px-10">
             <div className="flex items-center justify-between py-4">
-              {/* --- LOGO SECTION --- */}
               <Link to="/" className="flex items-center gap-3 group">
                 <img
                   src="./logo.png"
@@ -29,8 +28,6 @@ export default function App() {
                   CIVIXOR
                 </h1>
               </Link>
-
-              {/* --- NAVIGATION (Minimalist Style) --- */}
               <nav className="hidden md:flex items-center gap-8">
                 {[
                   { name: "Home", path: "/" },
@@ -51,10 +48,8 @@ export default function App() {
                       )}
                     </Link>
 
-                    {/* Underline Animation */}
                     <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#F98821] transition-all duration-300 group-hover:w-full"></span>
 
-                    {/* Dropdown Menu (Jika Ada) */}
                     {nav.hasChild && (
                       <div className="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0">
                         <div className="w-120 bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-2xl border border-gray-50 p-6">
@@ -87,9 +82,7 @@ export default function App() {
                 ))}
               </nav>
 
-              {/* --- RIGHT SIDE --- */}
               <div className="flex items-center gap-5">
-                {/* Language Selector */}
                 <div className="relative">
                   <button
                     onClick={() => setOpenLang(!openLang)}
@@ -113,7 +106,7 @@ export default function App() {
               </div>
             </div>
           </div>
-        </header>
+        </header> */}
         <main>
           <Routes>
             {/* <Route path="/" element={<ProductPage />} />
@@ -124,7 +117,7 @@ export default function App() {
             <Route path="*" element={<ProjectDeletedPage />} />
           </Routes>
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );
