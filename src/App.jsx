@@ -15,7 +15,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-50">
       <div className="mx-auto container-max">
-        {/* <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-gray-50">
+        <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-gray-50">
           <div className="max-w-7xl mx-auto px-6 md:px-10">
             <div className="flex items-center justify-between py-4">
               <Link to="/" className="flex items-center gap-3 group">
@@ -106,18 +106,18 @@ export default function App() {
               </div>
             </div>
           </div>
-        </header> */}
+        </header>
         <main>
           <Routes>
-            {/* <Route path="/" element={<ProductPage />} />
+            <Route path="/" element={<ProductPage />} />
             <Route path="/material" element={<MaterialPage />} />
             <Route path="/calculation" element={<CalculationPage />} />
             <Route path="/aboutus" element={<AboutusPage />} />
-            <Route path="/detail/:id" element={<ProductDetailPage />} /> */}
-            <Route path="*" element={<ProjectDeletedPage />} />
+            <Route path="/detail/:id" element={<ProductDetailPage />} />
+            {/* <Route path="*" element={<ProjectDeletedPage />} /> */}
           </Routes>
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );
