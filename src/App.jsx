@@ -64,7 +64,7 @@ export default function App() {
                               "Roofing",
                               "Paint",
                               "Ceiling",
-                              "Electrical",
+                              "Cement",
                             ].map((item) => (
                               <Link
                                 key={item}
